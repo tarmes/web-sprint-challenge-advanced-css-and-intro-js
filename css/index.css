@@ -135,6 +135,20 @@ button:hover{
     width:100%;
 }
 
+@media(max-width: 800px){
+  nav a{
+    margin: 0 10px;
+  }
+
+  .artists-container{
+    width: 90%;
+    justify-content: space-between;
+  }
+  .artist{
+    width: 45%;
+  }
+}
+
 @media(max-width: 500px){
   .artists-container{
     display: flex;
@@ -144,5 +158,9 @@ button:hover{
     width: 90%;
     margin: 0 auto;
   }
+
+  nav a{
+      color:#626262;
+      margin: 0 5px;
 
 }
