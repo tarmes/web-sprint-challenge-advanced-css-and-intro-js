@@ -207,7 +207,7 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-console.log(artists[0]);
+console.log(artists[0].name);
 
 console.log(artists[2].bio);
 
@@ -340,20 +340,20 @@ The function should console.log 50 chunks of HTML code that match the structure 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
 // function getHTML(data){
-//   for (let i = 0; i < artists.length; i++)
-//     console.log(`<div id="artist">
-//     <div class="image">
-//         <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
-//     </div>
-//     <div class = "name">
-//        <a href=data.wikipedia> data.name</a>
-//     </div>
-//     <div class = "bio">data].bio</div>
-//     </div>
-//   </div>)`
-// }
-//
-// console.log(getHTML(artists[2]));
+  for (let i = 0; i < artists.length; i++)
+    console.log(`<div id="artist">
+    <div class="image">
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+    </div>
+    <div class = "name">
+       <a href=data.wikipedia> data.name</a>
+    </div>
+    <div class = "bio">data].bio</div>
+    </div>
+  </div>)`
+}
+
+console.log(getHTML(artists[2]));
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
