@@ -264,8 +264,6 @@ function removeArtist(array, index) {
     return array.length;
   }
 
-console.log(removeArtist(artists, 0));
-
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -279,13 +277,23 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
+let newObjectArtist = {
+  id: 20,
+  name: 'Trevor Armes',
+  years: '1993 -- ',
+  genre: 'Web Design',
+  nationality: 'American',
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}
 
-function addArtist(/* Code here */){
 
-    /* Code here */
-
+function addArtist(array, object){
+  array.push(object);
+  console.log(artists);
   }
 
+
+console.log(addArtist(artists, newObjectArtist));
 /* Task 7: Create a function called lotsOfArt() that takes one argument:
 
     (1) artists array
@@ -294,11 +302,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array){
+  let prolificArtists = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].paintings > 100){
+      prolificArtists.push(array[i]);
+    }
+  }
+return prolificArtists;
 }
+
+console.log(lotsOfArt(artists));
 
 
 
